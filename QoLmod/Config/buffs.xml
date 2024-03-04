@@ -1,0 +1,20 @@
+<QoLmod>
+<!-- Adding recipes -->
+	<append xpath="/buffs">
+	
+	<buff name="deathFire"> 
+		<damage_type value="heat"/>
+		<stack_type value="ignore"/>
+		<duration value="10"/>
+		<update_rate value="1.2"/>
+		<effect_group>
+			<passive_effect name="HealthChangeOT" operation="base_subtract" duration="0,10" value="0,100"/>
+			<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="p_onFire"/>
+			<triggered_effect trigger="onSelfBuffRemove" action="RemoveParticleEffectFromEntity" particle="p_onFire"/>
+			<triggered_effect trigger="onSelfDied" action="RemoveParticleEffectFromEntity" particle="p_onFire"/>
+		</effect_group>
+	</buff>
+	
+	</append>
+	
+</QoLmod>

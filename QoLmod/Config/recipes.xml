@@ -1,0 +1,58 @@
+<QoLmod>
+<!-- Adding recipes -->
+<append xpath="/recipes">
+        <recipe name="ammo9mmBulletBall" count="4" craft_area="workbench">
+                <ingredient name="resourceFeather" count="1"/>
+        </recipe>
+
+        <recipe name="ammoGasCan" count="100" craft_area="chemistryStation">
+                <ingredient name="foodCropCorn" count="5"/>
+        </recipe>
+
+        <recipe name="ammoGasCan" count="100" craft_area="chemistryStation">
+                <ingredient name="foodCropGraceCorn" count="2"/>
+        </recipe>
+
+                <recipe name="steelQol" count="1" craft_area="workbench">
+                <ingredient name="resourceForgedSteel" count="20"/>
+        </recipe>
+
+        <recipe name="steelTrapQol" count="1" craft_area="workbench">
+                <ingredient name="resourceForgedSteel" count="25"/>
+                <ingredient name="resourceCoal" count="5"/>
+        </recipe>
+
+        <recipe name="resourceWood" count="500" craft_area="cementMixer">
+                <ingredient name="treePlantedMountainPine1m" count="1"/>
+        </recipe>
+
+        <recipe name="resourceWood" count="500" craft_area="cementMixer">
+                <ingredient name="treePlantedOak1m" count="1"/>
+        </recipe>
+
+        <recipe name="glassBulletproofBlockVariantHelper" count="1" craft_area="cementMixer">
+                <ingredient name="resourceBrokenGlass" count="15"/>
+                <ingredient name="resourceScrapIron" count="10"/>
+        </recipe>
+        
+		<recipe name="resourceCobblestones" count="10" craft_area="cementMixer">
+                <ingredient name="resourceRockSmall" count="10"/>
+        </recipe>
+
+</append>
+
+<!-- remove ingredients -->
+        <remove xpath="/recipes/recipe[@name='ammoDartIron']/ingredient[@name='unit_clay']"/>
+        <remove xpath="/recipes/recipe[@name='resourceGlue']/ingredient[@name='drinkJarRiverWater']"/>
+        <remove xpath="/recipes/recipe[@name='resourceConcreteMix']/ingredient[@name='resourceCrushedSand']"/>
+        <remove xpath="/recipes/recipe[@name='resourceConcreteMix']/ingredient[@name='resourceRockSmall']"/>
+        <remove xpath="/recipes/recipe[@name='ammoArrowStone']/ingredient[@name='resourceRockSmall']"/>
+        <set xpath="/recipes/recipe[@name='ammoArrowStone']/@count">4</set>
+
+
+</QoLmod>
+
+
+
+
+

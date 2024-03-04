@@ -1,0 +1,5 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english
+steelTrapQol,Blocks,Block,,,"Steel Burning Block"
+steelTrapQolDesc,Blocks,Block,,,"A steel block that will set anything on fire when walked on. Watch where you step when placing this down."
+steelQol,Blocks,Block,,,"Steel Block"
+steelQolDesc,Blocks,Block,,,"A steel block that is much stronger than your average block."

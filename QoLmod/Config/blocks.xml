@@ -1,0 +1,52 @@
+<QoLmod>
+<!-- Adding custom blocks -->
+<append xpath="/blocks">
+
+	<block name="steelQol">
+		<property name="CustomIcon" value="steelMaster"/>
+		<property name="CustomIconTint" value="0313fc"/>
+		<property name="Group" value="Building,advBuilding"/>
+		<property name="DescriptionKey" value="steelQolDesc"/>
+		<property name="Material" value="MsteelTrapQol"/>
+		<property name="DisplayType" value="blockHardened"/>
+		<property name="PassThroughDamage" value="true"/>
+		<property name="Texture" value="356,356,356,356,356,356"/>
+		<property name="CreativeMode" value="Dev"/>
+		<property class="RepairItems"> <property name="resourceForgedSteel" value="20"/> </property>
+		<property name="CustomUpgradeSound" value="place_block_metal"/>
+		<drop event="Harvest" name="resourceForgedSteel" count="2" tag="allHarvest"/>
+		<drop event="Destroy" count="0"/>
+		<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+		<property name="EconomicValue" value="600"/>
+		<property name="DescriptionKey" value="steelQolDesc"/>
+		<property name="FilterTags" value="fbuilding,fsteel"/>
+		<property name="SortOrder1" value="40p0"/>
+		<property name="SortOrder2" value="0002"/>
+	</block>
+
+	<block name="steelTrapQol">
+		<property name="CustomIcon" value="steelMaster"/>
+		<property name="CustomIconTint" value="c92a30"/>
+		<property name="Group" value="Building,advBuilding"/>
+		<property name="DescriptionKey" value="steelTrapQolDesc"/>
+		<property name="Material" value="MsteelTrapQol"/>
+		<property name="DisplayType" value="blockHardened"/>
+		<property name="PassThroughDamage" value="true"/>
+		<property name="Texture" value="355,355,356,356,356,356"/>
+		<property name="CreativeMode" value="Dev"/>
+		<property class="RepairItems"> <property name="resourceForgedSteel" value="20"/> </property>
+		<property name="CustomUpgradeSound" value="place_block_metal"/>
+		<drop event="Harvest" name="resourceForgedSteel" count="2" tag="allHarvest"/>
+		<drop event="Destroy" count="0"/>
+		<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+		<property name="EconomicValue" value="700"/>
+		<property name="DescriptionKey" value="steelTrapQolDesc"/>
+		<property name="FilterTags" value="fbuilding,fsteel"/>
+		<property name="SortOrder1" value="40p0"/>
+		<property name="SortOrder2" value="0002"/>
+		<property name="BuffsWhenWalkedOn" value="deathFire"/>
+	</block>
+
+</append>
+	
+</QoLmod>
